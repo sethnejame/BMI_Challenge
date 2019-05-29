@@ -2,7 +2,7 @@
 function BMICalculator(){
 };
 
-// metric BMI calculator (built-in)
+// metric BMI calculator
 BMICalculator.prototype.metric_bmi = function(obj) {
     let weight = obj.weight;
     let height = obj.height;
@@ -13,7 +13,7 @@ BMICalculator.prototype.metric_bmi = function(obj) {
     }
 };
 
-// imperial BMI calculator (seth added)
+// imperial BMI calculator
 BMICalculator.prototype.imperial_bmi = function(obj) {
   let weight = obj.weight;
   let height = obj.height;
