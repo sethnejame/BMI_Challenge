@@ -18,14 +18,14 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
   let weight = obj.weight;
   let height = obj.height;
   if (weight > 0 && height > 0) {
-    var finalBmi = (weight * 703) / (height * height);
+    let finalBmi = weight / (height * height) * 703;
     obj.bmiValue =  parseFloat(finalBmi.toFixed(2));
     setBMIMessage(obj);
   }
 };
   
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Person;
+    module.exports = BMICalculator;
 };
 
 function setBMIMessage (obj){
